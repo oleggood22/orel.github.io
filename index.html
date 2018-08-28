@@ -5,6 +5,7 @@
 	<title>Site</title>
 	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
   <script type="text/javascript" src="jquery.onepage-scroll.js"></script>
+  <link rel="stylesheet" href="modal-window.css">
   <link href='onepage-scroll.css' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="scroll.css">
   <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,700" rel="stylesheet">
@@ -34,8 +35,20 @@
           <h1>ОРЕЛ</h1>
           <h3>ГОРОД ВОИНСКОЙ СЛАВЫ</h3>
           <div class="about">
-          <a href="">УЗНАТЬ ПОДРОБНЕЕ</a>
+          <a href="#" id="myBtn">УЗНАТЬ ПОДРОБНЕЕ</a>
           <img src="img/play.png" alt="">
+          </div>
+          <!-- Модальное окно -->
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+              <div class="modal_container">
+              <h1>Город воинской славы - Орел.</h1>
+              <p>Российский город Орёл расположен на обоих берегах притока Волки - Оки. За свою многолетнюю историю (Орлу более 450 лет), город неоднократно вставал на пути противника, давая отпор захватчикам.В период Великой Отечественной войны город почти 2 года был в оккупации. 3 октября 1941 г. фашисты, обойдя Брянский укрепрайон, захватили Орел. Вокруг города на 15 км была объявлена запретная зона, на территории Орла враг организовал лагерь, как для военнопленных, так и для и мирного населения. Но всё же орловцы создавали подпольные группы, направленные для борьбы с противником. Орел освобожден в ходе Курской битвы в результате операции «Кутузов» 5 августа 1943 г. Немецкая оборона была пробита совместным ударом Центрального, Западного и Брянского фронтов.В апреле 2007г. Указом Президента РФ Орлу присвоено почетное звание «Город воинской славы».</p>
+              <div class="picture">
+              <img src="img/orel-3.jpg" alt="">
+              </div>
+            </div>
+            </div>
           </div>
           <div class="scroll-mouse">
           <img src="img/scroll-mouse.png" alt="">
@@ -49,9 +62,21 @@
           <h1>СКВЕР ТАНКИСТОВ</h1>
           <h3>Мемориальный сквер в честь подвига героев — <br>танкистов, первыми ворвавшимися <br>в Орёл при освобождении города от немецких оккупантов.</h3>
           <div class="botton_container">
-          <a href="">ПОДРОБНЕЕ</a>
+          <a href="#" id="myBtn_2">ПОДРОБНЕЕ</a>
           <a href="">НА КАРТЕ</a>
           </div>
+          </div>
+                    <!-- Модальное окно -->
+          <div id="myModal_2" class="modal_2">
+            <div class="modal-content_2">
+              <div class="modal_container_2">
+              <h1>Город воинской славы - Орел.</h1>
+              <p>Российский город Орёл расположен на обоих берегах притока Волки - Оки. За свою многолетнюю историю (Орлу более 450 лет), город неоднократно вставал на пути противника, давая отпор захватчикам.В период Великой Отечественной войны город почти 2 года был в оккупации. 3 октября 1941 г. фашисты, обойдя Брянский укрепрайон, захватили Орел. Вокруг города на 15 км была объявлена запретная зона, на территории Орла враг организовал лагерь, как для военнопленных, так и для и мирного населения. Но всё же орловцы создавали подпольные группы, направленные для борьбы с противником. Орел освобожден в ходе Курской битвы в результате операции «Кутузов» 5 августа 1943 г. Немецкая оборона была пробита совместным ударом Центрального, Западного и Брянского фронтов.В апреле 2007г. Указом Президента РФ Орлу присвоено почетное звание «Город воинской славы».</p>
+              <div class="picture">
+              <img src="img/orel-3.jpg" alt="">
+              </div>
+            </div>
+            </div>
           </div>
           <div class="scroll-mouse">
           <img src="img/scroll-mouse.png" alt="">
@@ -106,5 +131,36 @@
         </div>
       </section>
         </div>
+        <script>
+          window.onclick=function(e){ 
+      var elem = e ? e.target : window.event.srcElement; 
+        switch(elem.id) { 
+          case "myBtn": 
+            $("#myModal").show("display","block"); 
+            break; 
+          case "myBtn_2": 
+            $("#myModal_2").show("display","block"); 
+            break; 
+          default: 
+            $(model).css("display","none"); 
+          break; 
+
+          } 
+    } 
+        $( '#myBtn' ).click( function () 
+    { 
+      model = '#myModal'; 
+  }); 
+        $( '#myBtn_2' ).click( function () 
+    { 
+        model = '#myModal_2'; 
+  });
+        </script>
+
+        <script>
+          wheel(function() {
+            $("elem.id").css("display","none");
+   });
+ </script>
 </body>
 </html>
