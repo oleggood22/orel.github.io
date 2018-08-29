@@ -136,10 +136,11 @@
       var elem = e ? e.target : window.event.srcElement; 
         switch(elem.id) { 
           case "myBtn": 
-            $("#myModal").show("display","block"); 
+            $("#myModal").show(); 
+            $("#myModal").show(duration,[callback]) .hide(duration,[callback])
             break; 
-          case "myBtn_2": 
-            $("#myModal_2").show("display","block"); 
+          case "myBtn_2":
+            $("#myModal_2").show(); 
             break; 
           default: 
             $(model).css("display","none"); 
