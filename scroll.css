@@ -129,14 +129,17 @@
       background: url(img/bg-2.jpg) no-repeat center top / cover;
     }
 
-    .page2 h3{
-      font-size: 28px;
-      font-weight: 100;
-      text-transform: uppercase;
+    .page2 h1 {
+      margin-top: 0px;
+      font-size: 50px;
+      font-weight: 600;
     }
 
-    .botton_container {
-      margin-top: 50px;
+    .page2 h3 {
+      font-size: 30px;
+      font-weight: 100;
+      text-transform: uppercase;
+      margin-bottom: 100px;
     }
 
     .botton_container a{
@@ -181,9 +184,16 @@
     }
 
     .page4 h1{
-    font-size: 50px;
-    font-weight: 600;
-    margin-top: -1%;
+      margin-top: 25%;
+      font-size: 50px;
+      font-weight: 600;
+    }
+
+    .page4 h3 {
+      font-size: 30px;
+      font-weight: 100;
+      text-transform: uppercase;
+      margin-bottom: 100px;
     }
     
     /*Пятая страница*/
@@ -202,24 +212,23 @@
     .page5 h3 {
     font-size: 24px;
     font-weight: 200;
-    margin-bottom: 0;
     }
 
-    /*Шестая страница*/
+    /*Шестая страница*/ 
+
 
     .page6 {
       background: url(img/bg-6.jpg) no-repeat center top / cover;
     }
 
-    .page6 h1{
-      margin-top: 25%;
-      font-size: 50px;
-      font-weight: 600;
+    .page6 h1 {
+    margin-top: 2%;
+    margin-bottom: 5px;
+    font-size: 40px;
+    font-weight: 600;
     }
-
+    
     .page6 h3 {
-      font-size: 30px;
-      font-weight: 100;
-      text-transform: uppercase;
-      margin-bottom: 100px;
+    font-size: 24px;
+    font-weight: 200;
     }

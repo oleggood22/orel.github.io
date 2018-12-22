@@ -2,36 +2,38 @@
       display: none;
       position: fixed;
       z-index: 6;
-      left: 0;
+      right: 0;
       top: 0;
       width: 100%;
       height: 1000%;
-      overflow: hidden;
+      overflow: auto;
       background-color: rgba(0,0,0,0.4);
     }
 
     .modal-content {
       position: fixed;
       z-index: 7;
-      right: -20px;
-      top: 0;
-      width: 35%;
-      height: 100%;
+      bottom: 0;
+      width: 100%;
+      height: 45%;
       overflow: hidden;
       background-color: #fff;
-      animation: modal_anim  1s ease-in-out;
+      animation: modal_anim_down  1s ease-in-out;
     }
 
     .modal-content h4{
+      padding-left: 30px;
       color: #1C1C1C;
       font-size: 3vh;
       text-align: left;
       font-weight: 300;
       margin-bottom: 35px;
+      margin-top: 20px;
     }
 
     .modal-content p {
-      width: 30vw;
+      padding-left: 30px;
+      width: 70vw;
       text-align: left;
       line-height: 1.5;
       font-weight: 100;
@@ -40,14 +42,20 @@
 
     .modal_container {
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
       flex-direction: column;
-      align-items: center;
+      align-items: flex-start;
     }
 
     .modal-content img {
-      height: 20vw;
+      height: 5vw;
       z-index: 7;
+    }
+      .cancel img {
+      width: 10px;
+      height: 10px;
+      display: flex;
+      margin-top: 20px;
     }
 
     .modal_2 {
@@ -64,13 +72,15 @@
     .modal-content_2 {
       position: fixed;
       z-index: 7;
-      right: -20px;
+      right: 0px;
       top: 100vh;
-      width: 35%;
-      height: 100%;
-      overflow: hidden;
+      width: 30%;
+      height: 94vh;
+      overflow-y: auto;
+      overflow-x: hidden;
       background-color: #fff;
       animation: modal_anim  1s ease-in-out;
+      padding: 30px;
     }
 
     .modal-content_2 h4{
@@ -90,8 +100,16 @@
     }
 
     .modal-content_2 img {
-      height: 20vw;
+      height: ;
       z-index: 7;
+    }
+    
+    .picture {
+
+    }
+    
+    .picture img{
+      width: 400px;
     }
 
      .modal_3 {
@@ -115,6 +133,7 @@
       overflow: hidden;
       background-color: #fff;
       animation: modal_anim  1s ease-in-out;
+      padding: 30px;
     }
 
     .modal-content_3 h4{
@@ -134,7 +153,7 @@
     }
 
     .modal-content_3 img {
-      height: 20vw;
+      
       z-index: 7;
     }
 
@@ -152,18 +171,27 @@
     .modal-content_4 {
       position: fixed;
       z-index: 7;
-      right: -20px;
+      right: 0px;
       top: 300vh;
       width: 35%;
       height: 100%;
-      overflow: hidden;
+      overflow-y: auto;
+      overflow-x: hidden;
       background-color: #fff;
       animation: modal_anim  1s ease-in-out;
+      padding: 20px;
     }
-
+    
     .modal-content_4 h4{
       color: #1C1C1C;
       font-size: 3vh;
+      text-align: left;
+      font-weight: 300;
+      margin-bottom: 35px;
+    }
+    .modal-content_4 h5{
+      color: #1C1C1C;
+      font-size: 2.5vh;
       text-align: left;
       font-weight: 300;
       margin-bottom: 35px;
@@ -178,7 +206,7 @@
     }
 
     .modal-content_4 img {
-      height: 20vw;
+      width: 30%;
       z-index: 7;
     }
 
@@ -196,18 +224,28 @@
     .modal-content_5 {
       position: fixed;
       z-index: 7;
-      right: -20px;
+      right: 0px;
       top: 400vh;
       width: 35%;
-      height: 100%;
-      overflow: hidden;
+      height: 100%; 
+      overflow-y: auto;
+      overflow-x: hidden;
       background-color: #fff;
       animation: modal_anim  1s ease-in-out;
+      padding: 20px;
     }
 
     .modal-content_5 h4{
       color: #1C1C1C;
       font-size: 3vh;
+      text-align: left;
+      font-weight: 300;
+      margin-bottom: 35px;
+    }
+
+    .modal-content_5 h5{
+      color: #1C1C1C;
+      font-size: 2.5vh;
       text-align: left;
       font-weight: 300;
       margin-bottom: 35px;
@@ -222,7 +260,6 @@
     }
 
     .modal-content_5 img {
-      height: 20vw;
       z-index: 7;
     }
     
@@ -240,13 +277,15 @@
     .modal-content_6 {
       position: fixed;
       z-index: 7;
-      right: -20px;
+      right: 0px;
       top: 500vh;
       width: 35%;
       height: 100%;
-      overflow: hidden;
+      overflow-x: hidden;
+      overflow-y: auto;
       background-color: #fff;
       animation: modal_anim  1s ease-in-out;
+      padding: 20px;
     }
 
     .modal-content_6 h4{
@@ -267,7 +306,6 @@
     }
 
     .modal-content_6 img {
-      height: 20vw;
       z-index: 7;
     }
 
@@ -275,7 +313,61 @@
 
 
     @keyframes modal_anim {
-    from {right: -700px;}
+    from {right: -670px;}
     80% {right: 0px;}
-    to {right: -20px;}
+    to {right: 0px;}
+    }
+
+    @keyframes modal_anim_down {
+    from {bottom: -90%;}
+    50% {bottom: 0%;}
+    to {bottom: -5%;}
+    }
+
+    .modal_card {
+      display: none;
+      position: fixed;
+      z-index: 6;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 1000%;
+      overflow: hidden;
+      background-color: rgba(0,0,0,0.4);
+    }
+    .modal-content_card{
+      position: fixed;
+      z-index: 7;
+      right: 25%;
+      top: 125%;
+      width: 50%;
+      height: 40vh;
+      overflow: hidden;
+      background-color: #fff;
+      padding: 30px;
+    }
+
+    .modal-content_card h4{
+      color: #1C1C1C;
+      font-size: 3vh;
+      text-align: left;
+      font-weight: 300;
+      margin-bottom: 35px;
+    }
+
+    .modal-content_card p {
+      width: 30vw;
+      text-align: left;
+      line-height: 1.5;
+      font-weight: 100;
+      font-size: 2vh;
+    }
+
+    .modal-content_card img {
+      height: ;
+      z-index: 7;
+    }
+
+    .modal_card h5 {
+      margin: 0 auto;
     }
