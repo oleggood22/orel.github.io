@@ -20,12 +20,8 @@
 	</script>
 </head>
 <body>
-		  	<div class="menu">
-	  		<ul>
-	  			<li><a href="">Главная</a></li>
-	  			<li><a href="">О городе</a></li>
-	  			<li><a href="">Новости</a></li>
-	  		</ul>
+		  	<div class="up">
+	  		<a href="#"><img src="img/up-arrow.svg" alt=""></a>
 	  	</div>
   <div class="wrapper">
 	  <div class="main">
@@ -43,7 +39,7 @@
             <div class="modal-content">
               <div class="modal_container">
               	<div class="cancel">
-              	<a href="" id="exit"><img src="img/cancel-music.svg" alt=""></a>
+              	<a href="#" id="exit" onclick="cancel()"><img src="img/cancel-music.svg" alt=""></a>
               	</div>
               <h4>Город воинской славы - Орел.</h4>
               <p>Российский город Орёл расположен на обоих берегах притока Волки - Оки. За свою многолетнюю историю (Орлу более 450 лет), город неоднократно вставал на пути противника, давая отпор захватчикам.В период Великой Отечественной войны город почти 2 года был в оккупации. 3 октября 1941 г. фашисты, обойдя Брянский укрепрайон, захватили Орел. Вокруг города на 15 км была объявлена запретная зона, на территории Орла враг организовал лагерь, как для военнопленных, так и для и мирного населения. Но всё же орловцы создавали подпольные группы, направленные для борьбы с противником. Орел освобожден в ходе Курской битвы в результате операции «Кутузов» 5 августа 1943 г. Немецкая оборона была пробита совместным ударом Центрального, Западного и Брянского фронтов.В апреле 2007г. Указом Президента РФ Орлу присвоено почетное звание «Город воинской славы».</p>
@@ -54,7 +50,7 @@
             </div>
           </div>
           <div class="scroll-mouse">
-          <img src="img/scroll-mouse.png" alt="">
+          <img src="img/scrollmouse.svg" alt="">
           </div>
           </div>
   	    </div>
@@ -69,18 +65,18 @@
           <a href="#" id="myBtn_card">НА КАРТЕ</a>
           </div>
           </div>
+          <div class="scroll-mouse">
+          <img src="img/scrollmouse.svg" alt="">
+          </div>
           	                        <!-- Модальное окно -->
           <div id="myModal_2" class="modal_2">
             <div class="modal-content_2">
-              <div class="modal_container">
+              <div class="modal_container_2">
               	<div class="cancel">
-              	<a href="" id="exit"><img src="img/cancel-music.svg" alt=""></a>
+              	<a href="#" id="exit" onclick="cancel()"><img src="img/cancel-music.svg" alt=""></a>
               	</div>
-
-              <h4>Историческая справка о сквере танкистов.</h4>
-              <p>
-
-    Сквер Танкистов – одно из древнейших исторических мест г. Орла. Раньше оно именовалось Ильинской площадью, или просто Ильинской, по названию часовни, находящейся на ней. После Великой октябрьской социалистической революции 1 мая 1920 года., в день проведения всероссийского коммунистического субботника на месте Ильинской площади был разбит сквер, получивший название первомайский.
+              	<h4>Историческая справка о сквере танкистов.</h4>
+              <p>Сквер Танкистов – одно из древнейших исторических мест г. Орла. Раньше оно именовалось Ильинской площадью, или просто Ильинской, по названию часовни, находящейся на ней. После Великой октябрьской социалистической революции 1 мая 1920 года., в день проведения всероссийского коммунистического субботника на месте Ильинской площади был разбит сквер, получивший название первомайский.
 <br><br>
     22 июня 1942г. Началась Великая Отечественная война с фашисткой Германией, войска которой вероломно напали на нашу страну. 3 октября 1941г. Орел был оккупирован немцами, и первомайский сквер был уничтожен.
 <br><br>
@@ -96,8 +92,7 @@
 <br><br>
     В 1968 году был создан мемориал: танк-памятник был перенесен на площадь перед сквером и вместо Т-70, установили Т-34, как оружие славы танкистов.
 <br><br>
-    8 мая 1968 г. Вечный огонь был перенесен к мемориальному памятнику, начальником штаба 129-й Орловской стрелковой дивизии гвардии полковником Курсовым П.И. – участником освобождения г. Орла.
-</p>
+    8 мая 1968 г. Вечный огонь был перенесен к мемориальному памятнику, начальником штаба 129-й Орловской стрелковой дивизии гвардии полковником Курсовым П.И. – участником освобождения г. Орла.</p>
               <div class="picture">
               <img src="img/scver.jpg" alt="">
               </div>
@@ -109,7 +104,7 @@
             <div class="modal-content_card">
               <div class="modal_container">
               	<div class="cancel">
-              	<a href="#" id="exit"><img src="img/cancel-music.svg" alt=""></a>
+              	<a href="#" id="exit" onclick="cancel()"><img src="img/cancel-music.svg" alt=""></a>
               	</div>
 				<h5>На карте</h5>
 				<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Adf727ce0d5fc53448ec209c563381fece6300985f0eb4db9b50a741f4cdf7db0&amp;width=320&amp;height=240&amp;lang=ru_RU&amp;scroll=true"></script>
@@ -126,12 +121,15 @@
           <a href="">НА КАРТЕ</a>
           </div>
           </div>
+          <div class="scroll-mouse">
+          <img src="img/scrollmouse.svg" alt="">
+          </div>
                               <!-- Модальное окно -->
           <div id="myModal_3" class="modal_3">
             <div class="modal-content_3">
               <div class="modal_container">
               	<div class="cancel">
-              	<a href="" id="exit"><img src="img/cancel-music.svg" alt=""></a>
+              	<a href="#" id="exit" onclick="cancel()"><img src="img/cancel-music.svg" alt=""></a>
               	</div>
               <h4>Участники ВОВ, работавшие в ОМТ</h4>
               <p>Сименихин Николай Никанорович – директор техникума <br>
@@ -148,7 +146,7 @@
             </div>
           </div>
            <div class="scroll-mouse">
-          <img src="img/scroll-mouse.png" alt="">
+          <img src="img/scrollmouse.svg" alt="">
           </div>
   	    </div>
       </section>
@@ -163,10 +161,16 @@
           </div>
           </div>
   	    </div>
+  	    <div class="scroll-mouse">
+          <img src="img/scrollmouse.svg" alt="">
+          </div>
   	                        <!-- Модальное окно -->
           <div id="myModal_4" class="modal_4">
             <div class="modal-content_4">
               <div class="modal_container">
+              	<div class="cancel">
+              	<a href="#" id="exit" onclick="cancel()"><img src="img/cancel-music.svg" alt=""></a>
+              	</div>
               <h4>Памятник Л. Н. Гуртьеву</h4>
               <p>Леонтий Николаевич Гуртьев родился в 1891 году в городе Шемахе в Азербайджане в семье лесничего. В звании прапорщика частвовал в Первой мировой войне. В 1919 году Гуртьев был призван на службу в Красную Армию. В 1929 году окончил курсы «Выстрел». В должности командующего 308-й стрелковой дивизии участвовал в контрнаступлении на Курской дуге. Погиб при освобождении города Орла. <br> <br>
 
@@ -186,12 +190,15 @@
           </div>
           </div>
   	    </div>
+  	    <div class="scroll-mouse">
+          <img src="img/scrollmouse.svg" alt="">
+          </div>
   	                        <!-- Модальное окно -->
           <div id="myModal_5" class="modal_5">
             <div class="modal-content_5">
               <div class="modal_container">
               	<div class="cancel">
-              	<a href="" id="exit"><img src="img/cancel-music.svg" alt=""></a>
+              	<a href="#" id="exit" onclick="cancel()"><img src="img/cancel-music.svg" alt=""></a>
               	</div>
               <h4>Их именами названы улицы Орла</h4>
               <h5>Андрианова ул.</h5>
@@ -236,12 +243,15 @@
           </div>
           </div>
         </div>
+        <div class="scroll-mouse">
+          <img src="img/scrollmouse.svg" alt="">
+          </div>
           	                        <!-- Модальное окно -->
           <div id="myModal_6" class="modal_6">
             <div class="modal-content_6">
               <div class="modal_container">
               	<div class="cancel">
-              	<a href="#" id="exit"><img src="img/cancel-music.svg" alt=""></a>
+              	<a href="#" id="exit" onclick="cancel()"><img src="img/cancel-music.svg" alt=""></a>
               	</div>
               <h4>Памятник Лётчикам в Орле</h4>
               <p>Памятник посвящён советским лётчикам, героически сражавшимся за освобождение Орловщины в годы Великой Отечественной войны. Однако это мнение является спорным, так как это памятник военным летчикам новой эпохи реактивных самолетов. Конкретного памятника летчикам Великой Отечественной в Орле нет. Что очень странно,ведь именно в орловском небе открыл счет сбитым вражеским самолетам прибывший на фронт после излечения легендарный А.П.Маресьев, именно здесь совершали подвиги французы из легендарной "Нормандии", позже наименованной "Нормандия-Неман". Правда, есть улица "Нормандия-Неман". <br><br>
@@ -273,51 +283,51 @@
         switch(elem.id) { 
           case "myBtn": 
             $("#myModal").show();
+            var model = "#myModal";
             break; 
           case "myBtn_2":
             $("#myModal_2").show(); 
+            var model = "#myModal_2";
             break; 
             case "myBtn_3":
             $("#myModal_3").show(); 
+            var model = "#myModal_3";
             break; 
             case "myBtn_4":
-            $("#myModal_4").show(); 
+            $("#myModal_4").show();
+            var model = "#myModal_4";
             break; 
             case "myBtn_5":
-            $("#myModal_5").show(); 
+            $("#myModal_5").show();
+            var model = "#myModal_5";
             break; 
             case "myBtn_6":
-            $("#myModal_6").show(); 
+            $("#myModal_6").show();
+            var model = "#myModal_6"; 
             break; 
             case "myBtn_card":
-            $("#myModal_card").show(); 
+            $("#myModal_card").show();
+            var model = "#myModal_card";
             break; 
           default: 
-             $(model).css("display","none"); 
+             $("#myModal").css();
           break; 
 
           }
       }
 
+
         </script>
         <script>
-        	window.onclick=function(e){ 
-      var elem = e ? e.target : window.event.srcElement; 
-        switch(exit) { 
-          case "exit":
-          	return false; 
-            $("#myModal").css("display","none");
+		function cancel(){
+			$("#myModal").css("display","none");
             $("#myModal_2").css("display","none");
             $("#myModal_3").css("display","none");
             $("#myModal_4").css("display","none");
             $("#myModal_5").css("display","none");
             $("#myModal_6").css("display","none");
             $("#myModal_card").css("display","none");  
-            break; 
-          default: 
-             $("#myModal").css("display","none");
-          break; 
-      }
+        	 }
         </script>
         <script>
         	
@@ -332,6 +342,17 @@ $(window).bind('mousewheel DOMMouseScroll', function(event){
             $("#myModal_card").css("display","none");   
     }
 });
+        </script>
+        <script>
+        	function cancel(){
+			$("#myModal").css("display","none");
+            $("#myModal_2").css("display","none");
+            $("#myModal_3").css("display","none");
+            $("#myModal_4").css("display","none");
+            $("#myModal_5").css("display","none");
+            $("#myModal_6").css("display","none");
+            $("#myModal_card").css("display","none");  
+        	 }
         </script>
 </body>
 </html>
