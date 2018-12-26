@@ -1,0 +1,111 @@
+    html {
+      height: 100%;
+    }
+    body {
+      background: #E2E4E7;
+      padding: 0;
+      text-align: center;
+      font-family: 'Oswald', sans-serif;
+      position: relative;
+      margin: 0;
+      height: 100%;
+      -webkit-font-smoothing: antialiased;
+    }
+    
+    .wrapper {
+      height: 100% !important;
+      height: 100%;
+      margin: 0 auto; 
+      overflow: hidden;
+    }
+
+
+    .title {
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      align-items: flex-start;
+      text-align: left;
+      margin-left: 10%;
+      margin-top: 12%;
+
+    }
+
+    .titile_center {
+      margin-top: 8%;
+    }
+    
+    a {
+      text-decoration: none;
+    }
+    
+    
+    h1, h2 {
+      width: 100%;
+    }
+    h1 {
+      color: #fff;
+      margin-bottom: 0;
+      font-size: 75px;
+      letter-spacing: 3px;
+      font-weight: 800;
+    }
+
+    h3 {
+      color: #fff;
+      font-size: 40px;
+      font-weight: 300;
+      margin: 0;
+      margin-bottom: 25px;
+      font-weight: 400;
+    }
+    
+      /*Верхняя навигация*/
+
+    .up {
+      position: absolute;
+      left: 40px;
+      bottom: 30px;
+      z-index: 2;
+    }
+
+    .up img {
+      height: 4vh;
+    }
+
+    /*Первая страница*/
+
+    .page1 {
+      background: url(img/bg-1.jpg) no-repeat center top / cover;
+    }
+    
+    .page1 h3 {
+      letter-spacing: 3px;
+    }
+
+    .page1 a {
+      color: #fff;
+      text-decoration: underline;
+      font-size: 20px;
+      font-weight: 100;
+    }
+
+    .page1 img {
+      margin-left: 20px;
+      margin-bottom: -4px;
+    }
+
+    .full-title {
+      margin-top: 13%;
+
+    }
+
+    .scroll-mouse {
+      position: absolute;
+      top: 92%; right: 50%;
+    }
+
+      .scroll-mouse img{
+      height: 42px;
+    }
+    
