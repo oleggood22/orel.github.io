@@ -395,3 +395,90 @@
 
 
 }(window.jQuery);
+
+          window.onclick=function(e){ 
+      var elem = e ? e.target : window.event.srcElement; 
+        switch(elem.id) { 
+          case "myBtn": 
+            $("#myModal").show();
+            break; 
+          case "myBtn_2":
+            $("#myModal_2").show(); 
+            break; 
+            case "myBtn_3":
+            $("#myModal_3").show(); 
+            break; 
+            case "myBtn_4":
+            $("#myModal_4").show();
+            break; 
+            case "myBtn_5":
+            $("#myModal_5").show();
+            break; 
+            case "myBtn_6":
+            $("#myModal_6").show();
+            break; 
+            case "myBtn_card":
+            $("#myModal_card").show();
+            break; 
+             case "myBtn_card_2":
+            $("#myModal_card_2").show();
+            break;
+             case "myBtn_card_3":
+            $("#myModal_card_3").show();
+            break;
+            case "myBtn_card_4":
+            $("#myModal_card_4").show();
+            break; 
+            case "myBtn_card_5":
+            $("#myModal_card_5").show();
+            break;
+          default: 
+             $("#myModal").css();
+          break; 
+
+          }
+      };
+
+    function cancel(){
+      $("#myModal").css("display","none");
+            $("#myModal_2").css("display","none");
+            $("#myModal_3").css("display","none");
+            $("#myModal_4").css("display","none");
+            $("#myModal_5").css("display","none");
+            $("#myModal_6").css("display","none");
+            $("#myModal_card").css("display","none");
+            $("#myModal_card_2").css("display","none");
+            $("#myModal_card_3").css("display","none");
+            $("#myModal_card_4").css("display","none");
+            $("#myModal_card_5").css("display","none");
+           };
+          
+$(window).bind('mousewheel DOMMouseScroll', function(event){
+    if (event.originalEvent.wheelDelta > 1 || event.originalEvent.detail < 1) {
+          $("#myModal").css("display","none");
+            $("#myModal_2").css("display","none");
+            $("#myModal_3").css("display","none");
+            $("#myModal_4").css("display","none");
+            $("#myModal_5").css("display","none");
+            $("#myModal_6").css("display","none");
+            $("#myModal_card").css("display","none");
+            $("#myModal_card_2").css("display","none");
+            $("#myModal_card_3").css("display","none");
+            $("#myModal_card_4").css("display","none");
+            $("#myModal_card_5").css("display","none");
+    }
+});
+        
+          function cancel(){
+      $("#myModal").css("display","none");
+            $("#myModal_2").css("display","none");
+            $("#myModal_3").css("display","none");
+            $("#myModal_4").css("display","none");
+            $("#myModal_5").css("display","none");
+            $("#myModal_6").css("display","none");
+            $("#myModal_card").css("display","none"); 
+            $("#myModal_card_2").css("display","none");
+            $("#myModal_card_3").css("display","none");
+            $("#myModal_card_4").css("display","none");
+            $("#myModal_card_5").css("display","none"); 
+           };
