@@ -102,10 +102,10 @@
       height: ;
       z-index: 7;
     }
-    
 
-    .picture img{
-      width: 20%;
+    .picture_2 img{
+      width: 90%;
+      padding-bottom: 30px;
     }
 
      .modal_3 {
@@ -564,3 +564,6 @@
       margin: 0 auto;
     }
     
+    .picture_ul img{
+      width: 90%;
+    }
