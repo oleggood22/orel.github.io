@@ -103,12 +103,9 @@
       z-index: 7;
     }
     
-    .picture {
 
-    }
-    
     .picture img{
-      width: 400px;
+      width: 20%;
     }
 
      .modal_3 {
